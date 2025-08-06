@@ -72,7 +72,7 @@ DB_PASSWORD=your_password
 Create a new MySQL database named `bookstore` (or whatever name you specified in .env):
 
 ```sql
-CREATE DATABASE bookstore_db;
+CREATE DATABASE bookstore;
 ```
 
 ### 6. Run Migrations
