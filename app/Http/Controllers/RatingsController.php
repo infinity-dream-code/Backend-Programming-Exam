@@ -36,6 +36,13 @@ public function store(Request $request)
         'rating' => $request->rating,
     ]);
 
-    return redirect()->route('books.index')->with('success', 'Rating berhasil disimpan!');
+    $averageRating = Rating::where('book_id', $request->book_id)->avg('rating');
+
+    \App\Models\Book::where('id', $request->book_id)->update([
+        'avg_rating' => $averageRating,
+    ]);
+
+    return redirect()->route('books.index')->with('success', 'Rating berhasil disimpan dan rating rata-rata diperbarui!');
 }
+
 }
