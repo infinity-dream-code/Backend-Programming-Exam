@@ -45,7 +45,7 @@
         <div class="bg-white rounded-t-2xl shadow-xl">
             <div class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-8 rounded-t-2xl">
                 <h1 class="text-4xl md:text-5xl font-bold text-center mb-2">
-                    📚 Daftar Buku Terbaik
+                    Daftar Buku 
                 </h1>
                 <p class="text-center text-indigo-100 text-lg">
                     Temukan koleksi buku terbaik dengan rating tertinggi
